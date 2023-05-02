@@ -5,6 +5,7 @@ Project is created with:
 * HTML
 * SCSS
 * REACT.JS
+* REDUX
  ## Setup
 To run this project, install it locally using npm:
 
