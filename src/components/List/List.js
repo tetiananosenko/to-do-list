@@ -6,8 +6,7 @@ import { getAllColumns } from '../../redux/store';
 
 const List = () => {
   const columns = useSelector(getAllColumns);
-
-
+  
   return (
     <div className={styles.list}>
       <header className={styles.header}>
@@ -25,6 +24,5 @@ const List = () => {
     </div>
   );
 };
-
 
 export default List;

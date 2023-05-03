@@ -1,0 +1,24 @@
+@import '../../styles/settings.scss';
+
+.nav {
+  background-color: darken($color-dark, 3%);
+  padding: 20px 0px 3px 0px;
+}
+
+.div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  padding-left: 20px;
+  text-decoration: none;
+}
