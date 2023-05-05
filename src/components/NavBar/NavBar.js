@@ -1,5 +1,7 @@
 import styles from './NavBar.module.scss';
 import Container from '../Container/Container';
+import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 const NavBar = () => {
@@ -11,11 +13,14 @@ const NavBar = () => {
           <div className={styles.icon}>
             <span className="fa fa-tasks" />
           </div>
-          <div>
-            <a href="/" className={styles.text}>Home</a>
-            <a href="/favorite" className={styles.text}>Favorite</a>
-            <a href="/about" className={styles.text}>About</a>
-          </div>
+          <ul className={styles.wrapper}>
+            <li className={styles.text}><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined}
+              to="/">Home</NavLink></li>
+            <li className={styles.text}><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined}
+              to="/favorite">Favorite</NavLink></li>
+            <li className={styles.text}><NavLink className={({ isActive }) => isActive ? styles.linkActive : undefined}
+              to="/about">About</NavLink></li>
+          </ul>
         </div>
       </Container >
     </nav>
