@@ -2,10 +2,13 @@ import styles from './List.module.scss';
 import Column from '../Column/Column';
 import ColumnForm from '../ColumnForm/ColumnForm';
 import { useSelector, useDispatch } from 'react-redux';
-import { getListById, getColumnsByList, resetSearch } from '../../redux/store';
+import { getColumnsByList } from '../../redux/columnsRedux';
+import { resetSearch } from '../../redux/searchRedux';
 import { useParams, Navigate } from 'react-router';
 import SearchForm from '../SearchForm/SearchForm';
 import { useEffect } from 'react';
+import { getListById } from '../../redux/listsRedux';
+
 
 
 const List = () => {
@@ -18,7 +21,7 @@ const List = () => {
     return () => {
       dispatch(resetSearch())
     }
-  },[])
+  }, [])
 
   if (!listData) return <Navigate to="/" />
 
