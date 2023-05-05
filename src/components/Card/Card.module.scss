@@ -10,4 +10,10 @@
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+  color: black;
+}
+
+.isFavorite {
+  color:$color-warning;
+  cursor: pointer;
 }
