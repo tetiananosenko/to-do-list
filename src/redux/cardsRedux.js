@@ -1,6 +1,6 @@
 import shortid from 'shortid';
 
-export const getFilteredCards = ({ cards, search }, columnId) => cards.filter(card => card.columnId === columnId && card.title.includes(search?.toLowerCase()));
+export const getFilteredCards = ({ cards, search }, columnId) => cards.filter(card => card.columnId === columnId && card.title.toLowerCase().includes(search.toLowerCase()));
 export const addCard = payload => ({ type: ADD_CARD, payload });
 export const toggleCardFavorite = payload => ({ type: TOGGLE_CARD_FAVORITE, payload });
 export const removeCard = payload => ({ type: REMOVE_CARD, payload });

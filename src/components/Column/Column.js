@@ -5,9 +5,7 @@ import { useSelector } from 'react-redux';
 import { getFilteredCards } from '../../redux/cardsRedux';
 
 const Column = props => {
-  // let search = useSelector(state => state.search);
   const cards = useSelector(state => {
-    console.log(state);
     return getFilteredCards(state, props.id)
   });
 
