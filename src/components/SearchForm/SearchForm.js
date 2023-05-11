@@ -7,7 +7,6 @@ import { addSearch } from '../../redux/searchRedux';
 
 const SearchForm = () => {
   const [value, setValue] = useState('');
-  // let search = useSelector(state => state.search);
   const dispatch = useDispatch();
 
   const handleSubmit = (event) => {
