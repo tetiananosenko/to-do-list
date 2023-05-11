@@ -2,13 +2,12 @@ import Card from '../Card/Card';
 import PageTitle from '../PageTitle/PageTitle';
 import { useSelector } from 'react-redux';
 import styles from './Favorite.module.scss';
+import clsx from 'clsx';
 const Favorite = () => {
   const cards = useSelector(state => state.cards.filter(card => card.isFavorite === true));
-
-  console.log(cards);
-  return ( 
+  return (
     <>
-    <PageTitle title="Favorite" text="A simple to-do app, with lists, columns and card"/>
+      <PageTitle title="Favorite" />
       <ul className={styles.cardsFavorite}>
         {cards.map(card => <Card key={card.id} title={card.title} isFavorite={card.isFavorite} id={card.id} />)}
       </ul>

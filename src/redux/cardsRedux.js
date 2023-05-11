@@ -5,9 +5,9 @@ export const addCard = payload => ({ type: ADD_CARD, payload });
 export const toggleCardFavorite = payload => ({ type: TOGGLE_CARD_FAVORITE, payload });
 export const removeCard = payload => ({ type: REMOVE_CARD, payload });
 
-const ADD_CARD = 'app/search/ADD_CARD';
-const REMOVE_CARD = 'app/search/REMOVE_CARD';
-const TOGGLE_CARD_FAVORITE = 'app/search/TOGGLE_CARD_FAVORITE';
+const ADD_CARD = 'app/cards/ADD_CARD';
+const REMOVE_CARD = 'app/cards/REMOVE_CARD';
+const TOGGLE_CARD_FAVORITE = 'app/cards/TOGGLE_CARD_FAVORITE';
 
 const cardsReducer = (statePart = [], action) => {
   switch (action.type) {
