@@ -8,8 +8,10 @@ const Favorite = () => {
   const noCards = !cards.length;
   return (
     <>
-      <PageTitle title="Favorite" />
-
+      <PageTitle>
+        <h1 className={styles.title}>Favorite</h1>
+        <p className={styles.subtitle}>A simple to-do app, with lists, columns and card</p>
+      </PageTitle>
       <h1 className={clsx(styles.text, !noCards && styles.isFavorite)}>There is nothing here</h1>
       <ul className={clsx(styles.cardsFavorite, noCards && styles.isFavorite)}>
         {cards.map(card => <Card key={card.id} title={card.title} isFavorite={card.isFavorite} id={card.id} />)}
