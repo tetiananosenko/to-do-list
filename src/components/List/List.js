@@ -4,7 +4,7 @@ import ColumnForm from '../ColumnForm/ColumnForm';
 import { useSelector, useDispatch } from 'react-redux';
 import { getColumnsByList } from '../../redux/columnsRedux';
 import { resetSearch } from '../../redux/searchRedux';
-import { useParams, Navigate } from 'react-router';
+import { useParams } from 'react-router';
 import SearchForm from '../SearchForm/SearchForm';
 import { useEffect } from 'react';
 import { getListById } from '../../redux/listsRedux';
@@ -23,7 +23,7 @@ const List = () => {
     }
   }, [])
 
-  if (!listData) return <Navigate to="/" />
+  // if (!listData) return <Navigate to="/" />
 
   return (
     <div className={styles.list}>
