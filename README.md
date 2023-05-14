@@ -2,10 +2,10 @@
 In this program, you can save movies, books, etc. that you want to watch later. You can see the site [here](https://tetiananosenko.github.io/to-do-list/](https://to-do-list.tetiananosenko.repl.co/).
 ##  Project Description
 You can:
-| Rank | Languages |
+| Number | Description |
 |-----:|-----------|
-|     1| Distribute notes by topic|
-|     2| Create a new list from a note|
+| 1| Distribute notes by topic|
+|2| Create a new list from a note|
 |     3| Add notes to already existing lists|
 |     4|Delete notes|
 |     5|Add favorite or important notes to the favorites section|
