@@ -1,5 +1,5 @@
 # Notes
-In this program, you can save movies, books, etc. that you want to watch later. You can see the site [here]([https://to-do-list.tetiananosenko.repl.co/]).
+In this program, you can save movies, books, etc. that you want to watch later. You can see the site [here](https://to-do-list.tetiananosenko.repl.co/).
 ##  Project Description
 You can:
 | Number | Description |
