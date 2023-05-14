@@ -6,6 +6,7 @@ Project is created with:
 * SCSS
 * REACT.JS
 * REDUX
+* REACT ROUTER
  ## Setup
 To run this project, install it locally using npm:
 
